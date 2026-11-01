@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="LUXIPRIME LAB — студия дизайна логотипов и аватарок.">
+<title>LUXIPRIME LAB — Premium Design Studio</title>
+<style>
+:root{--bg:#090909;--panel:#141414;--gold:#d8ad58;--gold2:#f4d995;--muted:#b9b1a2;--line:#3a2d19}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#3a2a12 0,transparent 43%),var(--bg);color:#f8f3e9;font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#090909ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:19px;font-weight:900;letter-spacing:2.5px}.brand span{color:var(--gold)}.links{display:flex;gap:22px;color:#d6cbb8;font-size:14px}.links a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);background:linear-gradient(135deg,#f4d995,#b9822e);color:#171109;font-weight:800;padding:13px 21px;border-radius:7px;cursor:pointer;transition:.2s;font-size:14px}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.secondary{background:transparent;color:var(--gold2)}
+.hero{padding:92px 0 82px;text-align:center}.eyebrow{color:var(--gold2);letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:bold}.monogram{width:92px;height:92px;margin:0 auto 23px;border:1px solid #8c682f;border-radius:24px;display:grid;place-items:center;color:var(--gold2);font-family:Georgia,serif;font-size:43px;box-shadow:0 0 45px #b47b2730,inset 0 0 25px #b47b2718;transform:rotate(-4deg)}h1{font-size:clamp(39px,8vw,78px);line-height:1.04;letter-spacing:3px;margin:15px 0}h1 span,.gold{color:var(--gold)}.lead{max-width:660px;margin:0 auto 29px;color:#c9c0b2;font-size:18px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+section{padding:65px 0}.section-head{text-align:center;margin-bottom:34px}h2{font-size:clamp(28px,5vw,42px);margin:0 0 8px}.sub{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,#191919,#101010);border:1px solid var(--line);border-radius:13px;padding:24px}.card .icon{font-size:29px;color:var(--gold)}.card h3{margin:9px 0 6px}.card p{margin:0;color:var(--muted);font-size:14px}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.sample{min-height:210px;border:1px solid var(--line);border-radius:13px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;overflow:hidden;background:radial-gradient(circle at 50% 35%,#4b3517,#17120b 65%,#0d0d0d)}.sample strong{display:block;font-size:26px;letter-spacing:2px;color:var(--gold2)}.sample small{color:#c9bda8;letter-spacing:2px;font-size:10px}.emblem{width:66px;height:66px;border:1px solid #c69b4c;border-radius:50%;display:grid;place-items:center;margin:0 auto 13px;color:#f4d995;font-size:30px}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price{position:relative}.price.featured{border-color:var(--gold);box-shadow:0 0 28px #bd88251c}.amount{font-size:30px;font-weight:900;color:var(--gold2);margin:14px 0}ul{padding-left:19px;color:var(--muted);font-size:14px}.note{color:#a9a093;font-size:12px;text-align:center;margin-top:18px}.about{max-width:760px;margin:auto;text-align:center;color:#c9c0b2}.cta{background:linear-gradient(120deg,#211909,#111);border:1px solid var(--line);border-radius:16px;padding:38px;text-align:center}footer{border-top:1px solid var(--line);padding:25px 0;color:#9f9789;font-size:13px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+dialog{width:min(520px,92%);border:1px solid var(--gold);border-radius:14px;background:#111;color:#f7f2e8;padding:25px;box-shadow:0 20px 80px #000}dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}label{display:block;margin:12px 0 5px;color:#d9c9a8;font-size:14px}input,select,textarea{width:100%;padding:12px;border:1px solid #51412a;border-radius:7px;background:#090909;color:#fff;font:inherit}textarea{min-height:100px;resize:vertical}.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}.hint{font-size:12px;color:#aaa093}.close{float:right;background:transparent;border:0;color:#ddd;font-size:23px;cursor:pointer}
+@media(max-width:760px){.links{display:none}.grid,.portfolio,.prices{grid-template-columns:1fr}.hero{padding:62px 0}.card{padding:20px}.sample{min-height:170px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+<a class="brand" href="#top">LUXIPRIME <span>LAB</span></a>
+<div class="links"><a href="#services">Услуги</a><a href="#portfolio">Работы</a><a href="#prices">Цены</a><a href="#about">О студии</a></div>
+<button class="btn" onclick="openOrder()">Оставить заявку</button>
+</nav></header>
+<main id="top">
+<section class="hero wrap">
+<div class="monogram">L</div><div class="eyebrow">Premium Design Studio</div>
+<h1>ИДЕИ, КОТОРЫЕ<br><span>ВЫГЛЯДЯТ ДОРОГО.</span></h1>
+<p class="lead">Создаём выразительные логотипы, аватарки и визуальные образы. Современный дизайн с вниманием к каждой детали.</p>
+<div class="actions"><a class="btn" href="#portfolio">Смотреть концепции</a><button class="btn secondary" onclick="openOrder()">Обсудить проект</button></div>
+</section>
+<section id="services"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Наши возможности</div><h2>Услуги студии</h2><p class="sub">Визуальный стиль, который помогает выделиться.</p></div>
+<div class="grid">
+<article class="card"><div class="icon">✦</div><h3>Логотипы</h3><p>Уникальная идея, символ и цветовая гамма для команды, проекта или бренда.</p></article>
+<article class="card"><div class="icon">◈</div><h3>Аватарки</h3><p>Запоминающиеся изображения для игровых профилей, каналов и социальных сетей.</p></article>
+<article class="card"><div class="icon">▣</div><h3>Наборы оформления</h3><p>Логотип и аватарка в едином стиле, чтобы ваш проект выглядел цельно.</p></article>
+</div></div></section>
+<section id="portfolio"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Идеи в деталях</div><h2>Концепции дизайна</h2><p class="sub">Демонстрационные примеры, созданные для портфолио.</p></div>
+<div class="portfolio">
+<div class="sample"><div><div class="emblem">♛</div><strong>ROYAL</strong><small>GAMING COMMUNITY</small></div></div>
+<div class="sample"><div><div class="emblem">✦</div><strong>AUREL</strong><small>PREMIUM COFFEE</small></div></div>
+<div class="sample"><div><div class="emblem">♫</div><strong>SONORA</strong><small>MUSIC PROJECT</small></div></div>
+</div></div></section>
+<section id="prices"><div class="wrap">
+<div class="section-head"><div class="eyebrow">Прозрачно и понятно</div><h2>Примеры цен</h2><p class="sub">Стоимость можно согласовать перед началом работы.</p></div>
+<div class="prices">
+<article class="card price"><h3>Аватарка</h3><div class="amount">от 300 ₽</div><ul><li>Одна концепция</li><li>Подбор цветов</li><li>Файл для профиля</li></ul><button class="btn secondary" onclick="openOrder('Аватарка')">Выбрать</button></article>
+<article class="card price featured"><h3>Логотип</h3><div class="amount">от 500 ₽</div><ul><li>Разработка идеи</li><li>Один вариант дизайна</li><li>Подготовка изображения</li></ul><button class="btn" onclick="openOrder('Логотип')">Выбрать</button></article>
+<article class="card price"><h3>Комплект</h3><div class="amount">от 700 ₽</div><ul><li>Логотип и аватарка</li><li>Единый стиль</li><li>Подготовка двух файлов</li></ul><button class="btn secondary" onclick="openOrder('Комплект')">Выбрать</button></article>
+</div><p class="note">Цены демонстрационные. Итоговая стоимость согласуется до начала работы.</p>
+</div></section>
+<section id="about"><div class="wrap"><div class="section-head"><div class="eyebrow">О студии</div><h2>LUXIPRIME LAB</h2></div><p class="about">Небольшая творческая студия, в которой технологии встречаются с воображением. Наша цель — превращать идеи в аккуратный и запоминающийся визуальный стиль.</p></div></section>
+<section><div class="wrap"><div class="cta"><div class="eyebrow">Есть идея?</div><h2>Давайте создадим её образ.</h2><p class="sub">Расскажите, что вам нужно, — обсудим детали и сроки.</p><br><button class="btn" onclick="openOrder()">Оставить заявку</button></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 LUXIPRIME LAB</span><span>PREMIUM DESIGN STUDIO</span></div></footer>
+<dialog id="orderDialog"><button class="close" onclick="closeOrder()" aria-label="Закрыть">×</button>
+<h2>Новая заявка</h2><p class="hint">Заполните форму. После подключения почты заявки будут отправляться в студию.</p>
+<form id="orderForm" action="https://formsubmit.co/luxiprime.lab@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Новая заявка — LUXIPRIME LAB">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_template" value="table">
+<label for="customer">Как к вам обращаться?</label><input id="customer" name="Имя" required maxlength="80" placeholder="Ваше имя">
+<label for="service">Какая услуга нужна?</label><select id="service" name="Услуга" required><option value="">Выберите услугу</option><option>Логотип</option><option>Аватарка</option><option>Комплект</option><option>Другое</option></select>
+<label for="contact">Как с вами связаться?</label><input id="contact" name="Контакт для ответа" required maxlength="120" placeholder="Например, email или ник">
+<label for="details">Опишите идею</label><textarea id="details" name="Описание заказа" maxlength="1500" placeholder="Цвета, стиль, надпись и другие пожелания"></textarea>
+<p class="hint">Не указывайте адрес, пароль и другие личные данные. Для несовершеннолетних клиентов заказ и оплату лучше согласовать с родителями.</p>
+<div class="form-actions"><button class="btn" type="submit">Отправить заявку</button><button class="btn secondary" type="button" onclick="closeOrder()">Отмена</button></div>
+</form></dialog>
+<script>
+const dlg=document.getElementById('orderDialog');
+function openOrder(service=''){document.getElementById('service').value=service;dlg.showModal()}
+function closeOrder(){dlg.close()}
+</script>
+</body></html>
